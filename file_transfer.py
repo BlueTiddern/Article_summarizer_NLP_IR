@@ -2,18 +2,18 @@ import os
 import shutil
 import pandas as pd
 
-# Load the CSV file with file metadata
+# Loading the meta data csv
 csv_path = 'C:/Users/8897p/OneDrive/Desktop/NLP/Project/AXR/Folder_Data_exploration/metadata_analysis.csv'  # Replace with your CSV file path
 metadata_df = pd.read_csv(csv_path)
 
-# Define source directories and the target directory
+# source directories for cnn and daily mail
 source_dirs = {
     'stories_cnn': 'C:/Users/8897p/OneDrive/Desktop/NLP/Project/brainstorm/DATA/stories_cnn',
     'stories_dail': 'C:/Users/8897p/OneDrive/Desktop/NLP/Project/brainstorm/DATA/stories_dail'
 }
 target_dir = 'C:/Users/8897p/OneDrive/Desktop/NLP/Project/AXR/Raw_data_corpus'
 
-# Ensure the target directory exists
+# Does folder exist
 os.makedirs(target_dir, exist_ok=True)
 
 # Filter 2000 files from each folder with size >= 5 KB and word count >= 800
