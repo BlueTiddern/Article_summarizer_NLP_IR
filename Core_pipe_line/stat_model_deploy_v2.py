@@ -225,7 +225,7 @@ def lsa_summary_gensim(df, topic_column='topic_label', text_column='highlights',
                 topic_summaries[topic] = "No significant content to summarize."
                 continue
                 
-            svd = TruncatedSVD(n_components=10)
+            svd = TruncatedSVD(n_components=1, tol=1e-4, n_iter=10)
             svd.fit(tfidf_matrix)
             
         except ValueError as e:
