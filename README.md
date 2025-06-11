@@ -26,20 +26,6 @@ As the volume of digital news grows, readers face difficulty extracting relevant
   - Transformer-based models for summarization (e.g., BART, T5)
 - **Frontend**: HTML/CSS (via Flask templates)
 
-## 📁 Project Structure
-
-AXR/
-├── app.py # Flask application entry point
-├── templates/ # HTML templates
-├── static/ # CSS and JS (if any)
-├── models/ # Saved ML models or transformers
-├── preprocessing.py # Data cleaning and tokenization logic
-├── summarizer.py # Summarization logic
-├── topic_modeling.py # LDA-based topic classification
-├── qa_module.py # Question-answering implementation
-└── README.md # Project documentation
-
-
 ## 🧪 How It Works
 
 1. **User Input**: Upload an article and enter a query.
