@@ -28,3 +28,48 @@ As the volume of digital news grows, readers face difficulty extracting relevant
 
 ## 📁 Project Structure
 
+AXR/
+├── app.py # Flask application entry point
+├── templates/ # HTML templates
+├── static/ # CSS and JS (if any)
+├── models/ # Saved ML models or transformers
+├── preprocessing.py # Data cleaning and tokenization logic
+├── summarizer.py # Summarization logic
+├── topic_modeling.py # LDA-based topic classification
+├── qa_module.py # Question-answering implementation
+└── README.md # Project documentation
+
+
+## 🧪 How It Works
+
+1. **User Input**: Upload an article and enter a query.
+2. **Processing Pipeline**:
+   - Preprocess text (cleaning, tokenization)
+   - Identify relevant content sections via QA module
+   - Apply LDA for topic grouping
+   - Summarize content using transformer-based models
+3. **Output**: Topic-wise summaries and direct answers are shown on the web interface.
+
+## ✅ Use Cases
+
+- Journalists and researchers who need to scan long articles quickly.
+- Students and readers who prefer simplified, structured content.
+- Policy analysts and professionals dealing with domain-heavy text.
+
+## 🔍 Future Enhancements
+
+- Add support for multi-document summarization.
+- Integrate speech-to-text for audio input.
+- Allow export of summaries to PDF or text formats.
+
+## 🤝 Contributors
+
+- Pavan Yarlagadda  
+- Giridhara Srikar Chittem  
+- Uday Kiran Chimpiri  
+- Manushree Buyya
+
+## 📜 License
+
+This project is for educational and non-commercial use only.
+
